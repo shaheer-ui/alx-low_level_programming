@@ -7,10 +7,10 @@ void times_table(void)
 {
 	int i, j;
 	
-	i = 0
+	i = 0;
 	while (i <= 9)
 	{
-		j = 0
+		j = 0;
 		while (j <= 9)
 		{
 			if ((i * j) < 10)
