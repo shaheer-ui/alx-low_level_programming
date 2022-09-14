@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - Prints the sum of all miultiples of 3 or 5 up to 102
  * Return: Always (success)
