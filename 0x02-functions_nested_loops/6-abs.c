@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _abc - Entry point
+ * _abs - Entry point
  * @n: n is an integer
  * Description: prints the absolute value of an integer
  * Return: 0
