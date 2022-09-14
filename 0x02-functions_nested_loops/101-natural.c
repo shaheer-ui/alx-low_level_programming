@@ -5,15 +5,17 @@
  */
 int main(void)
 {
-	int i, z = 0;
-	while (i < 1024)
+	int multiples = 0;
+	int output = 0;
+
+	while (multiples < 1024)
 	{
-		if ((i % 3 == 0) || (i % 5 == 0))
+		if (multiples % 3 == 0 || multiples % 5 == 0)
 		{
-			z += i;
+			output += multiples;
 		}
-		i++;
+		multiples += 1;
 	}
-	printf("%d\n", z);
+	printf("%d\n", output);
 	return (0);
 }
