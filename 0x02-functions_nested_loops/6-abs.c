@@ -3,7 +3,7 @@
  * _abc - Entry point
  * @n: n is an integer
  * Description: prints the absolute value of an integer
- * Return: int
+ * Return: 0
  */
 
 int _abs(int n)
