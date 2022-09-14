@@ -1,29 +1,26 @@
 #include "stdio.h"
 /**
- * main - prints the first 50 Fibonacci numbers starting with 1 and 2
+ * main - Entry point
  *
- * Return: int.
+ * Return: always 0
  */
 int main(void)
 {
-	long i = 0;
-	long j = 1;
-	int n = 0;
-	long fib;
+	int i;
+	long int j[50], k = 2;
 
-	while (n < 50)
+	j[0] = 1;
+	j[1] = 2;
+
+	for (i = 2; i < 50; i++)
 	{
-		fib = j + i;
-		if (n != 49)
+		j[i] = j[i - 1] + j[i - 2];
+
+		if ((j[i] % 2) == 0 && j[i] < 4000000)
 		{
-			printf("%ld, ", fib);
-		} else
-		{
-			printf("%ld\n", fib);
+			k += j[i];
 		}
-		i = j;
-		j = fib;
-		n += 1;
 	}
+	printf("%ld\n", k);
 	return (0);
 }
