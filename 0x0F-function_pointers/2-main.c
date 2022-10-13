@@ -36,7 +36,7 @@ int abs_is_98(int elem)
 }
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -52,4 +52,3 @@ int main(void)
     index = int_index(array, 20, is_strictly_positive);
     printf("%d\n", index);
     return (0);
-}
